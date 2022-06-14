@@ -1,0 +1,11 @@
+<div class="task-list" *ngFor="let item of listItem">
+  <span class="task-item">{{ item.title }}</span>
+  <span class="task-item">{{ item.owner }}</span>
+  <span class="task-item">{{ item.createdAt }}</span>
+  <button type="button" class="btn btn-warning" (click)="onEdit(item)">
+    Edit
+  </button>
+  <button type="button" class="btn btn-secondary" (click)="onDelete(item)">
+    Delete
+  </button>
+</div>

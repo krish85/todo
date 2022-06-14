@@ -1,0 +1,16 @@
+<div class="input-group mb-3 boot-search">
+  <input
+    #inputField
+    type="text"
+    class="form-control input"
+    placeholder="{{ placeholder }}"
+    aria-label=""
+    aria-describedby="basic-addon2"
+  />
+  <span
+    class="input-group-text btn-primary btn-label"
+    (click)="handleSearch(inputField.value)"
+    id="basic-addon2"
+    >{{ buttonLabel }}</span
+  >
+</div>

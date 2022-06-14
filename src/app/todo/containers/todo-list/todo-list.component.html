@@ -1,0 +1,11 @@
+<h1 style="text-align: center">Todo List</h1>
+<app-bootstrap-input-search
+  placeholder="Enter the task"
+  buttonLabel="Add"
+  (onAddEvent)="onAdd($event)"
+></app-bootstrap-input-search>
+<app-list-item
+  [listItem]="taskList"
+  (onDeleteEvent)="onDelete($event)"
+  (onEditEvent)="onEdit($event)"
+></app-list-item>
